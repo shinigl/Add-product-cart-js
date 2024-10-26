@@ -66,7 +66,9 @@ submit.addEventListener("click", (e) => {
             prod.removeChild(productItem);
             cart.removeChild(cartItems);
             total-=price;
+            if(total===0){
             none.style.display = "block";
+            }
 
         }
         else{
